@@ -16,7 +16,9 @@ body {
     background-position: center;
     height: 100vh;
   }
-  
+  .text-center {
+    color: white;
+  }
   
   /* Header */
   header {
@@ -108,6 +110,19 @@ body {
   
     .card-body .badge {
       font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .hero {
+      height: auto; /* Adjust height for mobile view */
+      padding: 20px; /* Add padding if needed */
+      display: block; /* Stack the text below the image */
+      text-align: center;
+    }
+  
+    .text-center {
+      margin-top: 20px; /* Add space between image and text */
     }
   }
   
